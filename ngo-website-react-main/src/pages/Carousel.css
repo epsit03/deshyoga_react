@@ -1,0 +1,10 @@
+/* App.css */
+.carousel-container {
+    padding-top: 70px ;
+    filter: drop-shadow(0 0 0.55rem #E77B46);;
+    max-width: max-content;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
