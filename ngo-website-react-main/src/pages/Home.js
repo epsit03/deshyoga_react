@@ -398,27 +398,7 @@ const Home = () => {
           </div>
         </section> */}
       </Slider>
-      <section class="volunteer">
-        <p class="title">
-          OUR <span style={{ color: "#E77B46" }}>TEAM</span>
-        </p>
-
-        <div class="help-container">
-          {team.map((data) => {
-            return (
-              <div class="cards">
-                <div class="help-img">
-                  <img src={data.photoUrl} />
-                </div>
-                <h1>
-                  {data.first_name} {data.last_name}
-                </h1>
-                <p>{data.role}</p>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      
     </div>
   );
 };

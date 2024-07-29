@@ -233,15 +233,6 @@ header {
           box-sizing: border-box;
 }
 
-h1{
-  font-size: 2.5rem;
-  font-family: 'Montserrat';
-  font-weight: normal;
-  color: #444;
-  text-align: center;
-  margin: 2rem 0;
-}
-
 .wrapper{
   width: 90%;
   margin: 0 auto;
@@ -931,9 +922,9 @@ span {
 footer {
   width: 100%;
 
-  background-color: var(--blue);
+  background-color: var(--saffron);
   height: max-content;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   position: relative;
 }
 .contact {
@@ -1003,30 +994,42 @@ footer {
   margin: 0 auto;
 }
 .footer-content {
-  margin-top: 150px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 30px;
-
+  /* text-align: center; */
+  padding: 5px;
   align-items: baseline;
   justify-content: space-around;
   color: white;
 }
+
+.footer-about p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  width: 80%;
+}
 .footer-about {
   width: 30%;
-  min-width: 250px;
+  min-width: 200px;
 }
 .footer-about h1 {
-  font-size: 1.5rem;
-  margin-bottom: 13px;
+  font-size: 3rem;
+  margin-bottom: 10px;
   font-weight: bolder;
 }
 .footer-links {
-  min-width: 150px;
+  font-size: 28px;
 }
 .footer-links-ul {
+  font-size: 28px;
   list-style-type: none;
+}
+.footer-l{
+  font-size: 22px;;
 }
 .footer-links li {
   padding: 5px;
@@ -1057,7 +1060,7 @@ h2.links {
 .contact-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 8px;
 }
 .contact-footer {
   display: flex;
@@ -1075,7 +1078,7 @@ h2.links {
 .location {
   width: 30px;
   height: 30px;
-  background-color: #E77B46;
+  /* background-color: #E77B46; */
   border-radius: 50%;
   color: white;
   display: flex;
@@ -1536,7 +1539,7 @@ li {
     margin-left: 20px;
   }
   .contact-footer {
-    width: 80%;
+    width: 85%;
   }
   .contact-container {
     flex-direction: row;

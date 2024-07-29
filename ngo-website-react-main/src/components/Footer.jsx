@@ -7,46 +7,15 @@ const Footer = () => {
   const [Contact, setContact] = useState(false);
   return (
     <footer>
-      <section class="contact">
-        <div class="contact-1">
-          <i class="fa fa-phone" id="call" aria-hidden="true"></i>
-          <p class="question">DO YOU HAVE A QUESTION?</p>
-          <p class="number">+0123 456 789</p>
-        </div>
-        <div class="contact-2">
-          <div>
-            <i class="fa fa-envelope-o" id="mail" aria-hidden="true"></i>
-            <input
-              type="search"
-              placeholder="Enter email"
-              className="text-black"
-            />
-          </div>
-          <button
-            onClick={() => {
-              alert("subscribed!!!");
-            }}
-          >
-            Subscribe
-          </button>
-        </div>
-      </section>
+  
 
       <section class="footer">
         <div class="footer-content">
           <div class="footer-about">
-            <h1>OUR MISSION</h1>
+            <p> <h1>OUR VISION</h1></p> 
             <p>
-              Bringing clean water to an Asian village is a vital and impactful
-              endeavor that can significantly improve the lives of the
-              community's residents. Access to clean and safe drinking water is
-              a fundamental human right
-            </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             <br />
-            <p>
-              Initiatives focused on delivering clean water to Asian villages
-              serve as a testament to our collective responsibility in ensuring
-              a sustainable and equitable world.
             </p>
           </div>
 
@@ -62,32 +31,32 @@ const Footer = () => {
             <br />
             <ul class={"footer-links-ul " + (Links && "active-links")}>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                <Link to="/">Home</Link>
+                {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                <Link to="/"><div class="footer-l">Home</div></Link>
               </li>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                <Link to="about">About</Link>
+                {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                <Link to="about"><div class="footer-l">About</div></Link>
               </li>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                <Link to="causes">Causes</Link>
+                {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                <Link to="causes"><div class="footer-l">Causes</div></Link>
               </li>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                <Link to="event">Events</Link>
+                {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                <Link to="event"><div class="footer-l">Events</div></Link>
               </li>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                <Link to="news">News</Link>
+                {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                <Link to="news"><div class="footer-l">News</div></Link>
               </li>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                <Link to="contact">Contact</Link>
+                {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                <Link to="contact"><div class="footer-l">Contact</div></Link>
               </li>
             </ul>
           </div>
-
+{/* 
           <div class="gallery">
             <h2
               class="gal-btn"
@@ -111,7 +80,32 @@ const Footer = () => {
                 <img src="assets/gal6.png" />
               </div>
             </div>
+          </div> */}
+
+              {/* <section class="contact"> 
+        <div class="contact-1">
+          <i class="fa fa-phone" id="call" aria-hidden="true"></i>
+          <p class="question">DO YOU HAVE A QUESTION?</p>
+          <p class="number">+0123 456 789</p>
+        </div>
+        <div class="contact-2">
+          <div>
+            <i class="fa fa-envelope-o" id="mail" aria-hidden="true"></i>
+            <input
+              type="search"
+              placeholder="Enter email"
+              className="text-black"
+            />
           </div>
+          <button 
+            onClick={() => {
+              alert("subscribed!!!");
+            }}
+          >
+            Subscribe
+          </button>
+        </div>
+       </section> */}
 
           <div class="contact-footer">
             <h2
@@ -133,11 +127,12 @@ const Footer = () => {
                   <div class="location">
                     <i class="fa fa-map-marker one" aria-hidden="true"></i>
                   </div>
-                  <h3>Head Office</h3>
+                  <h2>Head Office</h2>
                 </div>
                 <div class="contact-ad">
-                  <p>123, Main Street, Your City</p>
-                  <p>USA 789456</p>
+                  <p>KH.No 1001, Ground floor, Street No 14/1,
+                  Village Jagatpur Extension</p>
+                  <p>Delhi 110084</p>
                 </div>
               </div>
               <div class="contact-card">
@@ -145,7 +140,7 @@ const Footer = () => {
                   <div class="location">
                     <i class="fa fa-phone two" aria-hidden="true"></i>
                   </div>
-                  <h3>Phone Number</h3>
+                  <h2>Phone Number</h2>
                 </div>
                 <div class="contact-ad">
                   <p>123, Main Street, Your City</p>
@@ -157,7 +152,7 @@ const Footer = () => {
                   <div class="location">
                     <i class="fa fa-envelope three" aria-hidden="true"></i>
                   </div>
-                  <h3>Email</h3>
+                  <h2>Email</h2>
                 </div>
                 <div class="contact-ad">
                   <p>123, Main Street, Your City</p>
@@ -167,7 +162,7 @@ const Footer = () => {
             </div>
           </div>
           <p class="copyright">
-            Copyright @ 2023. Developed by Harshit Chadha. All Rights Reserved.
+            Copyright @ 2024. Developed by Epsit Bhardwaj. All Rights Reserved.
           </p>
         </div>
       </section>
