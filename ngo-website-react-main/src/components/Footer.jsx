@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
   
 
-      <section class="footer">
+      <div class="footer">
         <div class="footer-content">
           <div class="footer-about">
             <p> <h1>OUR VISION</h1></p> 
@@ -165,7 +165,7 @@ const Footer = () => {
             Copyright @ 2024. Developed by Epsit Bhardwaj. All Rights Reserved.
           </p>
         </div>
-      </section>
+      </div>
     </footer>
   );
 };

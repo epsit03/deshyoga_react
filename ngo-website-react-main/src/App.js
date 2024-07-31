@@ -12,26 +12,33 @@ import Login from "./pages/Login";
 import UseGlobal from "./hooks/UseGlobal";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Membership from "./components/Membership";
+import DonationForm from "./components/contributionA";
 
 function App() {
   const { getUser } = UseGlobal();
   const [User, setUser] = useState(getUser());
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const checkSession = async () => {
-      const res = await axios.get("http://localhost:8000/user/login", {
-        withCredentials: true,
-      });
-      setUser(res.data.session);
-    };
-    checkSession();
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   const checkSession = async () => {
+  //     const res = await axios.get("http://localhost:3000/user/login", {
+  //       withCredentials: true,
+  //     });
+  //     setUser(res.data.session);
+  //   };
+  //   checkSession();
+  // }, []);
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout User={User} setUser={setUser} />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="membership" element={<Membership />} />
+          <Route path="contributionA" element={<DonationForm />} />
+          {/* <Route path="about" element={<About />} /> */}
+          {/* <Route path="about" element={<About />} /> */}
+          {/* <Route path="about" element={<About />} /> */}
           <Route path="causes" element={<Causes />} />
           <Route path="contact" element={<Contact />} />
           <Route path="news" element={<News />} />

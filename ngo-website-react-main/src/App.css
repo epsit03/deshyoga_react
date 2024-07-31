@@ -589,6 +589,7 @@ button:hover {
   font-size: 3rem;
   display: block;
   width: 70%;
+  margin-left: 20%;
   text-align: center;
  
 }
@@ -919,14 +920,6 @@ span {
   font-size: 2rem;
 }
 
-footer {
-  width: 100%;
-
-  background-color: var(--saffron);
-  height: max-content;
-  padding-bottom: 10px;
-  position: relative;
-}
 .contact {
   width: 80%;
   position: absolute;
@@ -988,13 +981,12 @@ footer {
   position: absolute;
 }
 
-.footer {
+/* .footer {
   width: 80%;
   display: flex;
   margin: 0 auto;
-}
+} */
 .footer-content {
-  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -1005,6 +997,10 @@ footer {
   color: white;
 }
 
+
+footer {
+  background-color: var(--saffron);
+}
 .footer-about p {
   font-size: 1.4rem;
   text-align: center;

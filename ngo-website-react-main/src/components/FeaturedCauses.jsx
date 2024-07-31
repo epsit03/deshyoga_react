@@ -4,14 +4,14 @@ import FeaturedCard from "./FeaturedCard";
 
 const FeaturedCauses = () => {
   const [data, setdata] = useState([]);
-  useEffect(() => {
-    const getCauses = async () => {
-      const res = await axios.get("http://localhost:8000/causes");
-      console.log(res.data);
-      setdata(res.data);
-    };
-    getCauses();
-  }, []);
+  // useEffect(() => {
+  //   const getCauses = async () => {
+  //     const res = await axios.get("http://localhost:3000/causes");
+  //     console.log(res.data);
+  //     setdata(res.data);
+  //   };
+  //   getCauses();
+  // }, []);
   return (
     <section class="feature-section mb-20">
       <p>

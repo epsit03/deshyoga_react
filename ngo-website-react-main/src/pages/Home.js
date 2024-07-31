@@ -72,9 +72,8 @@ const Home = () => {
         </p>
 
           {/* <p class="banner-heading-2">@Deshyoga</p> */}
-          <p class="banner-heading-3">
-          We are a non-profit organisation established in 2019 with a mission to promote yoga in scientific manners. The essence of Deshyoga is to explore ancient yogic scriptures and practice their principles and techniques. We attempt to harmoniously blend ancient wisdom with modern scientific knowledge and to extend the benefits of Yoga for physical, mental, and spiritual well-being of all. We invite everyone to embrace our holistic approach of absolute happiness and empowering individuals with physical, mental, and spiritual growth. Join us on this transformative journey, where Yoga becomes a catalyst for positive change and a path towards profound well-being!
-          </p>
+          <div class="banner-heading-3">
+          We are a non-profit organisation established in 2019 with a mission to promote yoga in scientific manners. The essence of Deshyoga is to explore ancient yogic scriptures and practice their principles and techniques. We attempt to harmoniously blend ancient wisdom with modern scientific knowledge and to extend the benefits of Yoga for physical, mental, and spiritual well-being of all.           </div>
           
           
         </div>

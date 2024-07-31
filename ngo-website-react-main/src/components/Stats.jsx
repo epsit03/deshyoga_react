@@ -7,13 +7,13 @@ const Stats = ({ donation, User }) => {
 
   useEffect(() => {
     const getDonations = async () => {
-      const res = await axios.get(
-        `http://localhost:8000/donations/${User.session.username}`,
-        {
-          withCredentials: true,
-        }
-      );
-      setUserDonations(res.data.reverse());
+      // const res = await axios.get(
+      //   `http://localhost:3000/donations/${User.session.username}`,
+      //   {
+      //     withCredentials: true,
+      //   }
+      // );
+      // setUserDonations(res.data.reverse());
       console.log(User.session.username, "donation");
     };
     getDonations();

@@ -54,35 +54,50 @@ const Header = ({ path, User }) => {
           <Link to="/about" className="w-[100%] lg:w-auto" class="navtext">
             <li>
               <a href="#" style={{ color: path == "/about" ? "red" : "" }}>
-                About
-              </a>
-            </li>
-          </Link>
-          <Link to="/causes" className="w-[100%] lg:w-auto" class="navtext">
-            <li>
-              <a href="#" style={{ color: path == "/causes" ? "red" : "" }}>
-                Causes
+                About US
               </a>
             </li>
           </Link>
           <Link to="/events" className="w-[100%] lg:w-auto" class="navtext">
             <li>
               <a href="#" style={{ color: path == "/events" ? "red" : "" }}>
-                Event
+                Activities
+              </a>
+            </li>
+          </Link>
+          <Link to="https://courses.deshyoga.org" className="w-[100%] lg:w-auto" class="navtext">
+            <li>
+              <a href="https://courses.deshyoga.org" style={{ color: path == "/causes" ? "red" : "" }}>
+                COURSES
+              </a>
+            </li>
+          </Link>
+          
+          <Link to="/news" className="w-[100%] lg:w-auto" class="navtext">
+            <li>
+              <a href="#" style={{ color: path == "/news" ? "red" : "" }}>
+                Reviews
               </a>
             </li>
           </Link>
           <Link to="/news" className="w-[100%] lg:w-auto" class="navtext">
             <li>
               <a href="#" style={{ color: path == "/news" ? "red" : "" }}>
-                News
+                Gallery
               </a>
             </li>
           </Link>
-          <Link to="contact" className="w-[100%] lg:w-auto" class="navtext">
+          <Link to="/news" className="w-[100%] lg:w-auto" class="navtext">
             <li>
-              <a href="#" style={{ color: path == "/contact" ? "red" : "" }}>
-                Contact
+              <a href="#" style={{ color: path == "/news" ? "red" : "" }}>
+                Donate
+              </a>
+            </li>
+          </Link>
+          <Link to="/membership" className="w-[100%] lg:w-auto" class="navtext">
+            <li>
+              <a href="#" style={{ color: path == "/membership" ? "red" : "" }}>
+                Membership
               </a>
             </li>
           </Link>
@@ -91,6 +106,13 @@ const Header = ({ path, User }) => {
               <a href="#" style={{ color: path == "/login" ? "red" : "" }}>
                 <i class="fa fa-user" aria-hidden="true"></i>
                 {User && User.username ? User.username : " Sign in"}
+              </a>
+            </li>
+          </Link>
+          <Link to="contact" className="w-[100%] lg:w-auto" class="navtext">
+            <li>
+              <a href="#" style={{ color: path == "/contact" ? "red" : "" }}>
+                Contact Us
               </a>
             </li>
           </Link>

@@ -14,10 +14,10 @@ const LoggedIn = ({ user, setUser }) => {
   const [email, setemail] = useState(user.email || "");
 
   const logout = async () => {
-    const res = await axios.get("http://localhost:8000/user/logout", {
-      withCredentials: true,
-    });
-    console.log(res);
+    // const res = await axios.get("http://localhost:3000/user/logout", {
+    //   withCredentials: true,
+    // });
+    // console.log(res);
     setUser({
       username: null,
       full_name: null,

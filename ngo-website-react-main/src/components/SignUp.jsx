@@ -20,7 +20,7 @@ const SignUp = ({ setUser, setcurrent }) => {
       alert("please fill all details");
     } else {
       console.log("Dd");
-      const res = await axios.post("http://localhost:8000/user/register", {
+      const res = await axios.post("http://localhost:3000/user/register", {
         username: username,
         full_name: name,
         address: address,
@@ -44,7 +44,7 @@ const SignUp = ({ setUser, setcurrent }) => {
       alert("please fill all details");
     } else {
       const res = await axios.post(
-        "http://localhost:8000/user/login",
+        "http://localhost:3000/user/login",
         {
           username: username,
           password: password,

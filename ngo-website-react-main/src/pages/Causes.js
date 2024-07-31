@@ -12,21 +12,21 @@ const Causes = () => {
   const [Three, setThree] = useState(active);
   const [User, setUser] = useState({ session: null });
   const [UserDonations, setUserDonations] = useState([]);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const checkSession = async () => {
-      const res = await axios.get("http://localhost:8000/user/login", {
-        withCredentials: true,
-      });
-      setUser(res.data);
-      console.log(User, "cause");
-      return User;
-    };
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   const checkSession = async () => {
+  //     const res = await axios.get("http://localhost:3000/user/login", {
+  //       withCredentials: true,
+  //     });
+  //     setUser(res.data);
+  //     console.log(User, "cause");
+  //     return User;
+  //   };
 
-    checkSession();
+  //   checkSession();
 
-    console.log(User, "fdfdfdfdfrjieurireuieru");
-  }, []);
+  //   console.log(User, "fdfdfdfdfrjieurireuieru");
+  // }, []);
 
   return (
     <div className="mb-[120px] flex flex-col items-center">

@@ -7,12 +7,12 @@ const Contact = () => {
   const [Message, setMessage] = useState("");
   const [Name, setName] = useState("");
   const Post = async () => {
-    const res = await axios.post("http://localhost:8000/contactus/add", {
-      name: Name,
-      email: Email,
-      message: Message,
-    });
-    console.log(res);
+    // const res = await axios.post("http://localhost:3000/contactus/add", {
+    //   name: Name,
+    //   email: Email,
+    //   message: Message,
+    // });
+    // console.log(res);
   };
 
   const [Time, setTime] = useState(false);
@@ -65,7 +65,7 @@ const Contact = () => {
           marginwidth="0"
           title="map"
           scrolling="no"
-          src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0deshyogaswarnjayantipuram+(Deshyoga%20Charitable%20Trust)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
         ></iframe>
       </div>
       <div class="container px-5 py-24 mx-auto flex">

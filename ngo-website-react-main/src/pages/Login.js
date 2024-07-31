@@ -9,18 +9,18 @@ const Login = ({ User, setUser }) => {
   //   withCredentials: true,
   // });
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const checkSession = async () => {
-      const res = await axios.get("http://localhost:8000/user/login", {
-        withCredentials: true,
-      });
-      setcurrent(res.data);
-      setUser(res.data.session);
-      console.log(res.data, "fnfdfjnfjdnfjfdjfdjfdbdjfdfjj");
-    };
-    checkSession();
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   const checkSession = async () => {
+  //     const res = await axios.get("http://localhost:3000/user/login", {
+  //       withCredentials: true,
+  //     });
+  //     setcurrent(res.data);
+  //     setUser(res.data.session);
+  //     console.log(res.data, "fnfdfjnfjdnfjfdjfdjfdbdjfdfjj");
+  //   };
+  //   checkSession();
+  // }, []);
 
   return (
     <div className="flex flex-col mb-20">

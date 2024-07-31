@@ -13,20 +13,20 @@ const Events = () => {
   const [Ldata, setLdata] = useState([
     { title: "", photo_url: "", date: "", address: "", city: "" },
   ]);
-  useEffect(() => {
-    const getEvents = async () => {
-      const res = await axios.get("http://localhost:8000/events");
-      console.log(res.data);
-      setdata(res.data);
-    };
-    getEvents();
-    const getEventLatest = async () => {
-      const res = await axios.get("http://localhost:8000/events/latest");
-      console.log(res.data);
-      setLdata(res.data);
-    };
-    getEventLatest();
-  }, []);
+  // useEffect(() => {
+  //   const getEvents = async () => {
+  //     const res = await axios.get("http://localhost:3000/events");
+  //     console.log(res.data);
+  //     setdata(res.data);
+  //   };
+  //   getEvents();
+  //   const getEventLatest = async () => {
+  //     const res = await axios.get("http://localhost:3000/events/latest");
+  //     console.log(res.data);
+  //     setLdata(res.data);
+  //   };
+  //   getEventLatest();
+  // }, []);
   return (
     <div className="w-full mb-[120px]">
       <div className="w-full h-20 bg-red-500 flex items-center justify-center">

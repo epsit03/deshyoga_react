@@ -15,15 +15,15 @@ const DonationCard = ({ User }) => {
     return formattedDate;
   };
   const donate = async () => {
-    const res = await axios.post(
-      "http://localhost:8000/donations/add",
-      {
-        username: User.username,
-        Amount: Donation,
-        Donation_Date: currentDate(),
-      },
-      { withCredentials: true }
-    );
+    // const res = await axios.post(
+    //   "http://localhost:3000/donations/add",
+    //   {
+    //     username: User.username,
+    //     Amount: Donation,
+    //     Donation_Date: currentDate(),
+    //   },
+    //   { withCredentials: true }
+    // );
     alert("thanks for donating");
     setDonation("");
   };

@@ -10,16 +10,16 @@ const About = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  React.useEffect(() => {
-    const getMilestones = async () => {
-      const res = await axios.get("http://localhost:3001/milestones", {
-        responseType: "json",
-      });
-      console.log(res);
-      setdata(res.data);
-    };
-    getMilestones();
-  }, []);
+  // React.useEffect(() => {
+  //   const getMilestones = async () => {
+  //     const res = await axios.get("http://localhost:3001/milestones", {
+  //       responseType: "json",
+  //     });
+  //     console.log(res);
+  //     setdata(res.data);
+  //   };
+  //   getMilestones();
+  // }, []);
 
   return (
     <div className="flex flex-col">

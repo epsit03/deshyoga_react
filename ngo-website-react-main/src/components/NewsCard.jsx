@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 const NewsCard = () => {
   const [data, setdata] = useState([]);
   const navigate = useNavigate();
-  useEffect(() => {
-    const getNews = async () => {
-      const res = await axios.get("http://localhost:8000/news");
-      console.log(res.data);
-      setdata(res.data);
-    };
-    getNews();
-  }, []);
+  // useEffect(() => {
+  //   const getNews = async () => {
+  //     const res = await axios.get("http://localhost:3000/news");
+  //     console.log(res.data);
+  //     setdata(res.data);
+  //   };
+  //   getNews();
+  // }, []);
   return (
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
