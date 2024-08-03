@@ -568,7 +568,7 @@ img {
   margin-left: 6%;
 }
 button {
-  background-color: black;
+  /* background-color: black; */
   padding: 26px;
   padding-top: 8px;
   font-weight: 900;

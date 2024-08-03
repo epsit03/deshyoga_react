@@ -51,13 +51,15 @@ const Header = ({ path, User }) => {
               </a>
             </li>
           </Link>
-          <Link to="/about" className="w-[100%] lg:w-auto" class="navtext">
-            <li>
-              <a href="#" style={{ color: path == "/about" ? "red" : "" }}>
-                About US
-              </a>
-            </li>
-          </Link>
+          <div class="dropdown">
+  <button class="dropbtn">About Us<span class="caret"></span></button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
           <Link to="/events" className="w-[100%] lg:w-auto" class="navtext">
             <li>
               <a href="#" style={{ color: path == "/events" ? "red" : "" }}>
