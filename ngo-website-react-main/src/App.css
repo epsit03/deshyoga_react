@@ -217,7 +217,9 @@ header {
   background-image: url(headerbg.jpg);
   background-size: 130% 100%;
 }
-
+.banner-text{
+  display: none;
+}
 .inaguralPic {
   float: right;
   height: 500px;
@@ -225,6 +227,53 @@ header {
   padding-top: 15px;
   border-radius: 590px 590px;
 }
+@media (max-width: 750px) {
+  .inaguralPic{
+    display: none;
+  }
+  .banner-heading-3{
+    display: none;
+  }
+  .banner-heading-1 a{
+    
+    display: none;
+  }
+  .baner-text{
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: #C6D4DF;
+  }
+  .Carousel{
+    display: none;
+  }
+}
+
+@media (min-width:800px) and (max-width:1200px){
+  .banner-heading-3{
+    display: none;
+  }
+  .baner-text {
+    display: none;
+  }
+  .inaguralPic{
+   width: fit-content;
+   /* height: 350px; */
+   
+  }
+  .banner-heading-1 a{
+    display: none;
+  }
+}
+
+@media (min-width:1200px){
+  
+  .baner-text {
+    display: none;
+  }
+  
+}
+
 
 *{
   margin: 0;

@@ -77,6 +77,10 @@ const Home = () => {
           
           
         </div>
+        <div class ="baner-text">
+          <span>Deshyoga blends ancient yoga wisdom with modern science for well-being. </span>
+        </div>
+
        
       </div>
       <section class="help-section">
