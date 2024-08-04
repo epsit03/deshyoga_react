@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
 import UseGlobal from "../hooks/UseGlobal";
 import "./Header.css"
 
@@ -51,22 +53,29 @@ const Header = ({ path, User }) => {
               </a>
             </li>
           </Link>
-          <div class="dropdown">
-  <button class="dropbtn">About Us<span class="caret"></span></button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
+          {/* <div class="dropdown"> */}
+          <Link to="/AboutUS" className="w-[100%] lg:w-auto" class="navtext">
+            <li>
+              <a href="#" style={{ color: path == "/" ? "red" : "" }}>
+                About Us
+              </a>
+            </li>
+          </Link>
+          {/* <button class="dropbtn">About Us</button> */}
+  {/* <span class="caret"></span>
+  <div class="dropdown-content"> 
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
-  </div>
-</div>
+  </div> */}
+{/* </div> */}
 
-          <Link to="/events" className="w-[100%] lg:w-auto" class="navtext">
+          {/* <Link to="/events" className="w-[100%] lg:w-auto" class="navtext">
             <li>
               <a href="#" style={{ color: path == "/events" ? "red" : "" }}>
                 Activities
               </a>
             </li>
-          </Link>
+          </Link> */}
           <Link to="https://courses.deshyoga.org" className="w-[100%] lg:w-auto" class="navtext">
             <li>
               <a href="https://courses.deshyoga.org" style={{ color: path == "/causes" ? "red" : "" }}>
@@ -75,7 +84,7 @@ const Header = ({ path, User }) => {
             </li>
           </Link>
           
-          <Link to="/news" className="w-[100%] lg:w-auto" class="navtext">
+          <Link to="/review" className="w-[100%] lg:w-auto" class="navtext">
             <li>
               <a href="#" style={{ color: path == "/news" ? "red" : "" }}>
                 Reviews
@@ -121,6 +130,7 @@ const Header = ({ path, User }) => {
         </ul>
       </div>
     </header>
+    
   );
 };
 

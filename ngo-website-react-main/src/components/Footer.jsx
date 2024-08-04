@@ -16,23 +16,28 @@ const Footer = () => {
           </div>
 
         <div className="footer-section">
-        <u><h3>Quick Links</h3></u>
+        <u><h3>Our NGO</h3></u>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Deshyoga</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Centres</a></li>
           </ul>
         </div>
         <div className="footer-section">
-          <u><h3>Contact Us</h3></u>
-          <p>Your address</p>
-          <p>Your email</p>
-          <p>Your phone number</p>
+          <u><h3>Quick Links</h3></u>
+          <p>Disclaimer</p>
+          <p>Privacy Policy</p>
+          <p>Terms and Conditions</p>
         </div>
-      </div>
+        <div className="footer-section">
       <div className="footer-add">KH.No 1001, Ground floor, Street No 14/1,<br/>
 Village Jagatpur Extension, Delhi 110084<br/>
-deshyoga2017@gmail.com</div>
+deshyoga2017@gmail.com</div></div>
+      </div>
+      <div className="footer-bottom">
+        &copy; 2024 | Designed by Deshyoga IT Team
+      </div>
+      
     </footer>
     
   );

@@ -14,6 +14,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Membership from "./components/Membership";
 import DonationForm from "./components/contributionA";
+import AboutUS from "./components/AboutUS";
+import CardGrid from "./components/CardGrid";
+import Review from "./components/Review";
 
 function App() {
   const { getUser } = UseGlobal();
@@ -39,10 +42,13 @@ function App() {
           {/* <Route path="about" element={<About />} /> */}
           {/* <Route path="about" element={<About />} /> */}
           {/* <Route path="about" element={<About />} /> */}
+          <Route path="/AboutUS" element={<AboutUS />} />
           <Route path="causes" element={<Causes />} />
           <Route path="contact" element={<Contact />} />
           <Route path="news" element={<News />} />
           <Route path="events" element={<Events />} />
+          <Route path="review" element={<Review />} />
+          <Route path="cardgrid" element={<CardGrid />} />
           <Route
             path="login"
             element={<Login User={User} setUser={setUser} />}
